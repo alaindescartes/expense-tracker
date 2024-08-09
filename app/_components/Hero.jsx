@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 function Hero() {
   return (
-    <section className="bg-gray-50 flex items-center flex-col">
-      <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+    <section className="bg-gray-50 flex items-center flex-col h-[100vh]">
+      <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center mt-20">
         <div className="mx-auto max-w-xl text-center">
           <h1 className="text-3xl font-extrabold sm:text-5xl">
             Manage Your Expenses.
@@ -26,13 +26,6 @@ function Hero() {
           </div>
         </div>
       </div>
-      <Image
-        src={'/dashboard.jpg'}
-        width={1000}
-        height={700}
-        className="-mt-9 rounded-xl border-2"
-        alt="dashboard"
-      />
     </section>
   );
 }
