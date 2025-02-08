@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+💰 Expense Tracker
 
-## Getting Started
+A modern expense tracker built with Next.js for the frontend, Drizzle ORM for database management, and Clerk for secure user authentication. This application helps users track their income and expenses, offering a user-friendly interface with real-time data visualization using Recharts.
 
-First, run the development server:
+🛠 Features
 
-```bash
+User Authentication: Powered by Clerk for a seamless sign-in/sign-up experience.
+Expense and Income Tracking: Add, update, and delete transactions.
+Real-Time Data Visualization: Charts powered by Recharts to track spending patterns.
+Dark Mode Support: Easily switch between light and dark themes using next-themes.
+Emoji Support: Add emojis to transaction descriptions using emoji-picker-react.
+Responsive Design: Mobile-first design for optimal usability on all devices.
+📂 Project Structure
+
+/: Next.js frontend for the user interface.
+drizzle-orm: Manages database interactions with Neon Database as the backend.
+tailwindcss: Handles styling with utility-first CSS classes.
+@radix-ui: Provides accessible UI components like dialogs and alerts.
+🚀 How to Run
+
+Prerequisites
+Node.js installed on your machine
+A Neon Database instance
+Clerk account for authentication
+Steps
+Clone the repository:
+git clone https://github.com/alaindescartes/expense-tracker.git
+cd expense-tracker
+Install dependencies:
+npm install
+Set up your environment variables in a .env file:
+NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_frontend_api_key
+DATABASE_URL=your_neon_database_url
+NEXT_PUBLIC_SITE_URL=your_site_url
+Run the database migrations:
+npm run db:push
+Start the development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The application will be available at http://localhost:3000.
+📦 Key Technologies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js: React framework for server-side rendering and static site generation
+Drizzle ORM: Type-safe and modern ORM for managing database schema and queries
+Tailwind CSS: Utility-first CSS framework for styling
+Clerk: Authentication service for seamless user management
+Recharts: Charts for visualizing transaction data
+🛡️ Future Enhancements
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Recurring Transactions: Automate repeating expenses and income.
+Budget Management: Set monthly budgets and receive alerts when nearing limits.
+Export Data: Allow users to export their transaction history as a CSV file.
+Notifications: Add reminders for upcoming bills or low budget alerts
