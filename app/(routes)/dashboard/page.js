@@ -1,4 +1,5 @@
 'use client';
+export const dynamic = 'force-dynamic';
 import { useUser } from '@clerk/nextjs';
 import CardInfo from '@/app/(routes)/dashboard/_componets/CardInfo';
 import { useEffect, useState } from 'react';
